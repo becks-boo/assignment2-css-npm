@@ -1,0 +1,12 @@
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.col-100 {
+    grid-column: 1 / 5;
+}
+
+.col-50 {
+    grid-column: span 2;
+}
