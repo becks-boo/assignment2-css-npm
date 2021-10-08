@@ -1,0 +1,21 @@
+{
+  "name": "assignment-2",
+  "version": "1.0.0",
+  "description": "Second assignment from Moritz to us apprentices, Grid, MediaQuery, npm and SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.exozet.com:Igor.Stein/assignment-2.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Igor Stein",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
+}
