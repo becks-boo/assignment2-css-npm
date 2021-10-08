@@ -1,0 +1,38 @@
+@mixin sm($columnSpan: span 4) {
+    @media (max-width: 500px) {
+        grid-column: $columnSpan;
+    }
+}
+
+@mixin md($columnSpan: span 2) {
+    @media (min-width: 501px) and (max-width: 1000px) {
+        grid-column: $columnSpan;
+    }
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px 30px;
+    margin: 10px;
+
+    .col-100 {
+        grid-column: 1 / 5;
+    }
+
+    .col-50 {
+        grid-column: span 2;
+        @include md($columnSpan: span 4);
+        @include sm;
+    }
+
+    .col-25 {
+        @include sm;
+        @include md;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
